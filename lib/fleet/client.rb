@@ -44,6 +44,14 @@ module Fleet
       end
     end
 
+    def list_state
+      states = list_states['states'] || []
+    end
+
+    def list_machines
+      machines = list_machines['machines'] || []
+    end
+
     def submit(name, service_def)
 
       unless name =~ /\A[a-zA-Z0-9:_.@-]+\Z/
