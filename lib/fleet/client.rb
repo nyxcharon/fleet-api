@@ -44,11 +44,11 @@ module Fleet
       end
     end
 
-    def list_state
+    def list_unit_states
       states = list_states['states'] || []
     end
 
-    def list_machines
+    def list_fleet_machines
       machines = list_machines['machines'] || []
     end
 
