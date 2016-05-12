@@ -5,7 +5,8 @@ module Fleet
       MACHINES_RESOURCE = 'machines'
 
       def list_machines
-        get(machines_path, nil)
+        opts = { consistent: true, recursive: true, sorted: true }
+        get(machines_path, opts)
       end
 
       private
