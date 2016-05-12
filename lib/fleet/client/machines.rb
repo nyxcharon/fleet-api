@@ -5,7 +5,7 @@ module Fleet
       MACHINES_RESOURCE = 'machines'
 
       def list_machines
-        get(machines_path)
+        get(machines_path, nil)
       end
 
       private

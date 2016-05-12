@@ -53,7 +53,6 @@ module Fleet
     end
 
     def submit(name, service_def)
-
       unless name =~ /\A[a-zA-Z0-9:_.@-]+\Z/
         raise ArgumentError, 'name may only contain [a-zA-Z0-9:_.@-]'
       end
