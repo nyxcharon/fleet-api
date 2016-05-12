@@ -5,7 +5,7 @@ module Fleet
       STATE_RESOURCE = 'state'
 
       def list_states(options={})
-        get(state_path, options)
+        get(state_path)
       end
 
       private
