@@ -17,4 +17,3 @@ module Fleet
     end
   end
 end
-

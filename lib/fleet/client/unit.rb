@@ -2,7 +2,7 @@ module Fleet
   class Client
     module Unit
 
-      UNITS_RESOURCE = 'units'
+      UNITS_RESOURCE = 'state'
 
       def list_units
         get(units_path)
