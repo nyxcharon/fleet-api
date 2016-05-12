@@ -14,7 +14,7 @@ describe Fleet::Client::State do
 
     it 'GETs the state resource' do
       expect(subject).to receive(:get)
-        .with('fleet/v1/state', {})
+        .with('fleet/v1/state')
         .and_return(response)
 
       subject.list_states
