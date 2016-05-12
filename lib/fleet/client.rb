@@ -45,11 +45,11 @@ module Fleet
     end
 
     def list_unit_states
-      states = list_states['states'] || []
+      list_states['states'] || []
     end
 
     def list_fleet_machines
-      machines = list_machines['machines'] || []
+      list_machines['machines'] || []
     end
 
     def submit(name, service_def)

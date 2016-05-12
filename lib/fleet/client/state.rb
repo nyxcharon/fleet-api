@@ -4,8 +4,9 @@ module Fleet
 
       STATE_RESOURCE = 'state'
 
-      def list_states()
-        get(state_path)
+      def list_states
+        opts = { consistent: true, recursive: true, sorted: true }
+        get(state_path, opts)
       end
 
       private
